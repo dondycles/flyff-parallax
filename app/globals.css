@@ -6,31 +6,31 @@
   scroll-behavior: smooth;
 }
 #Colosseum_2 {
-  --parallax-speed: 3;
+  --parallax-speed: 90;
   animation: parallax linear;
   animation-timeline: scroll();
 }
 
 #Flyff_2 {
-  --parallax-speed: 2;
+  --parallax-speed: 150;
   animation: parallax linear;
   animation-timeline: scroll();
 }
 
 #Magician_F_3 {
-  --parallax-speed: 1;
+  --parallax-speed: 25;
   animation: parallax linear;
   animation-timeline: scroll();
 }
 
 #Crackshooter_F {
-  --parallax-speed: 1;
+  --parallax-speed: 25;
   animation: parallax linear;
   animation-timeline: scroll();
 }
 
 @keyframes parallax {
   to {
-    transform: translateY(calc(var(--parallax-speed) * 200px));
+    transform: translateY(calc(var(--parallax-speed) * 1%));
   }
 }
