@@ -14,24 +14,24 @@ export default function Home() {
           fill
           className="object-cover "
         />
-        <div className="absolute top-0 left-0 flex flex-row justify-center items-end w-full h-full">
+        <div className="absolute top-0 left-0 flex flex-row justify-center items-end w-full h-full ">
           <Image
             id="Magician_F_3"
             src={Magician_F_3}
             alt="Magician"
-            className="object-cover max-w-[300px] h-auto"
+            className="w-full max-w-[300px] h-auto hidden md:block"
           />
           <Image
             id="Flyff_2"
             src={Flyff_2}
             alt="Flyff"
-            className="object-cover w-full max-w-[400px] h-auto my-auto"
+            className="w-full max-w-[400px] h-auto my-auto"
           />
           <Image
             id="Crackshooter_F"
             src={Crackshooter_F}
             alt="Crackshooter"
-            className="object-cover max-w-[300px] h-auto"
+            className="w-full max-w-[300px] h-auto hidden md:block"
           />
         </div>
       </div>
