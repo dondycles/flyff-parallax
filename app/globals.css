@@ -2,26 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  scroll-behavior: smooth;
+}
+#Colosseum_2 {
+  --parallax-speed: 3;
+  animation: parallax linear;
+  animation-timeline: scroll();
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+#Flyff_2 {
+  --parallax-speed: 2;
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
+
+#Magician_F_3 {
+  --parallax-speed: 1;
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
+
+#Crackshooter_F {
+  --parallax-speed: 1;
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
+
+@keyframes parallax {
+  to {
+    transform: translateY(calc(var(--parallax-speed) * 200px));
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
