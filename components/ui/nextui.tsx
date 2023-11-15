@@ -6,7 +6,7 @@ import Nav from "./nav";
 
 export function NextUI({ children }: { children: React.ReactNode }) {
   return (
-    <NextUIProvider className="max-h-[100dvh] h-screen w-full bg-background text-foreground flex flex-col">
+    <NextUIProvider className="max-h-[100dvh] h-screen w-full bg-background text-foreground flex flex-col light">
       <Nav />
       {children}
     </NextUIProvider>

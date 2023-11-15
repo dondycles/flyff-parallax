@@ -4,6 +4,7 @@
 
 * {
   scroll-behavior: smooth;
+  @apply scrollbar-thin scrollbar-track-transparent scrollbar-thumb-primary;
 }
 #Colosseum_2 {
   --parallax-speed: 90;
