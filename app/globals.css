@@ -29,6 +29,11 @@
   animation: parallax linear;
   animation-timeline: scroll();
 }
+#CoralIsland_4 {
+  --parallax-speed: 25;
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
 
 @keyframes parallax {
   to {
